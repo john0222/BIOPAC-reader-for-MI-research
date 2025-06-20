@@ -86,22 +86,7 @@ def analyze_ecg_for_arrhythmias(ecg_channel, sample_rate):
     vpc_count = 0
     q_wave_total_duration_seconds = 0
 
-    # --- 佔位符：以下為您需要實現具體邏輯的地方 ---
-    # 範例：如何迭代ECG數據
-    # for i in range(len(ecg_data)):
-    #     # 實作您的VT/VF/VPC檢測邏輯
-    #     # 實作您的Q波檢測邏輯
-    #     pass
 
-    # 提示：
-    # 1. R波檢測 (例如使用Pan-Tompkins算法)
-    # 2. R-R間期分析來判斷心率和心律不整
-    # 3. 波形形態分析來區分不同的心律不整類型
-    # 4. 對於Q波，需要先定位QRS波群，然後識別Q波的起點和終點
-
-    # 舉例：簡單的基於閾值的Q波檢測 (僅示意，不具備實際醫療判斷能力)
-    # if ecg_data[i] < q_wave_threshold_negative: # 假設Q波是負向波
-    #     q_wave_duration_seconds += (1 / sample_rate) # 累計時間
 
     # 舉例：簡單的基於心率的VT/VF判斷 (僅示意)
     # if r_r_interval_seconds < vt_threshold_rr and waveform_morphology_matches_vt:
